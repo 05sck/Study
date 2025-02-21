@@ -1,4 +1,1 @@
-# LRDAProgram
-# Study
-# Study
 # Study
