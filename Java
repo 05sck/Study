@@ -1,0 +1,35 @@
+# Java
+
+
+출처: https://www.youtube.com/watch?v=14kWFW5DY8Y 
+
+Windows, Linux 등
+C++의 경우 Source Code를 Binary Code로 바꿔주는
+Compiler가 OS에 종속적이어서 OS별로 Compile을 따로 해줘야 하는 번거로움이 있었다.
+
+
+Ex ) c++
+  OS ->  Compiler -> Binary File
+  Linux -> GCC (GNU Compiler Collection) -> .out .so .o ELF(Executable and Linkable Format)
+  Windows -> Microsoft Visual C++ (MSVC) -> .exe .dll .obj .lib PE(Portable Executable)
+
+  Java -> javac-> .class
+
+## 제임스 아서 고슬링 James Arthur Gosling
+
+이 분께서 그 번거로움을 없애고자
+JVM (Java Virtual Machine)이란 개념을 도입하여
+OS에 종속적인 JVM 설치 통해  
+Java Source Code를 Compiling한 Byte Code를
+읽을 수 있도록 하여 한번의 Compile을 통해 다른 OS환경에서도 같이 동작할 수 있도록 하였다.
+
+실제 설치하는 환경의 경우 대략
+JDK (Java Development Kit) 안에 -> JRE(Java Runtime Environment) -> JVM(Java Virtual Machine)
+이러한 구조로 되어 있다.
+
+
+또한 Garbarge Collector를 도입하여
+메모리를 Deallocate 해주는 번거로운 일도 안 할 수 있게끔 하였다.
+
+Java Apllication이 사용하는 Memory 구조는 대략 다음과 같다.
+Heap Memory( Young Generation - Eden S0 S1 , Old Generation - Tenured ) , Native Memory( Permanent )
