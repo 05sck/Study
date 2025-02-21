@@ -4,3 +4,17 @@
 
 Mac에 /opt/homebrew/bin/brew 확인
 
+패키지관리자로 오픈 소스 소프트웨어 설치 및 관리한다.
+
+자주 쓰는 명령어
+brew install -> 공식레시피(Formula)를 찾아 빌드 바이너리 다운로드
+brew update -> Homebrew & Package Repository Update
+brew upgrade -> Package 최신버전 Upgrade
+brew doctor -> Homebrew 환경 진단
+
+Formula?
+Ruby로 작성되고
+패키지 소스코드 url, 해시값, depends_on, install 명령어등
+소스코드 다운로드하기 위한 정보들이 담겨져 있는 코드이다.
+ChatGpt4o의 예시
+
